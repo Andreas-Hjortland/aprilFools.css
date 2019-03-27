@@ -10,6 +10,14 @@
   They will be applied to every website they visit as well as their developer tools.
 */
 
+/*
+   Force the browser to scroll more than the page height making 
+   some content unavailable through normal scroll
+ */
+*,::before,::after {
+  scroll-snap-points-y: repeat(110%);
+  scroll-snap-type: mandatory;
+}
 
 /*
   Turn every website upside down
